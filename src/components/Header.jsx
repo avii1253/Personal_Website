@@ -26,9 +26,14 @@ const Header = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <a href="#" className="text-xl font-display font-medium">
-          <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">Avinash Anand</span>
-          <p className="text-xs font-medium text-muted-foreground">Full Stack Web Developer</p>
+        <a href="#" className="flex items-center">
+          <div className="mr-2 flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white font-bold">
+            AA
+          </div>
+          <div>
+            <span className="text-xl font-display font-bold text-foreground">Avinash Anand</span>
+            <p className="text-xs font-medium text-muted-foreground">Full Stack Web Developer</p>
+          </div>
         </a>
         
         {/* Desktop Navigation */}
@@ -54,21 +59,21 @@ const Header = () => {
           <nav className="flex flex-col space-y-6">
             <a 
               href="#about" 
-              className="text-lg font-medium text-gradient"
+              className="text-lg font-medium text-foreground hover:text-blue-600"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </a>
             <a 
               href="#projects" 
-              className="text-lg font-medium text-gradient"
+              className="text-lg font-medium text-foreground hover:text-blue-600"
               onClick={() => setIsMenuOpen(false)}
             >
               Projects
             </a>
             <a 
               href="#contact" 
-              className="text-lg font-medium text-gradient"
+              className="text-lg font-medium text-foreground hover:text-blue-600"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact

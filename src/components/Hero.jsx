@@ -25,9 +25,11 @@ const Hero = () => {
           Focused on creating clean, efficient, and user-friendly interfaces.
         </p>
         
-        <div className="flex flex-wrap justify-center gap-3 mb-8 animate-fade-in" style={{ animationDelay: '0.25s' }}>
+        <div className="flex flex-wrap justify-center gap-4 mb-10 animate-fade-in" style={{ animationDelay: '0.25s' }}>
           {['React', 'Node', 'Express', 'Next.js', 'TypeScript', 'C++', 'Java', 'Python'].map((skill, index) => (
-            <span key={index} className="px-3 py-1 rounded-full text-sm font-medium shadow-sm" 
+            <span 
+              key={index} 
+              className="px-4 py-2 rounded-lg text-sm font-bold shadow-md transition-transform hover:scale-105" 
               style={{ 
                 background: `linear-gradient(90deg, ${getGradientColors(index)})`,
                 color: 'white'
