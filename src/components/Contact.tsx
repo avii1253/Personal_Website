@@ -1,6 +1,5 @@
-
 import { useState } from 'react';
-import { Mail, GitHub, Linkedin, Send } from 'lucide-react';
+import { Mail, Github, Linkedin, Send } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -143,7 +142,7 @@ const Contact = () => {
               
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/5 text-primary">
-                  <GitHub size={20} />
+                  <Github size={20} />
                 </div>
                 <div>
                   <h4 className="text-base font-medium">GitHub</h4>
