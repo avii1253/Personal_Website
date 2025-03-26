@@ -28,6 +28,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a href="#" className="text-xl font-display font-medium">
           <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">Avinash Anand</span>
+          <p className="text-xs font-medium text-muted-foreground">Full Stack Web Developer</p>
         </a>
         
         {/* Desktop Navigation */}
