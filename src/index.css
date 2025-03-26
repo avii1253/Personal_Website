@@ -32,7 +32,7 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground antialiased bg-gradient-to-br from-white to-blue-50;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
@@ -51,7 +51,7 @@
 
 @layer components {
   .text-gradient {
-    @apply bg-gradient-to-r from-foreground to-neutral-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
   }
   
   .subtle-glass {
@@ -63,7 +63,7 @@
   }
 
   .link-item {
-    @apply relative inline-block cursor-pointer transition-all duration-200 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-current after:transition-transform after:duration-300 hover:text-primary/80 hover:after:origin-bottom-left hover:after:scale-x-100;
+    @apply relative inline-block cursor-pointer transition-all duration-200 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-current after:transition-transform after:duration-300 hover:text-blue-600 hover:after:origin-bottom-left hover:after:scale-x-100;
   }
 
   .section {

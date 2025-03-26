@@ -22,12 +22,12 @@ const Header = () => {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 py-4 px-6 md:px-12 transition-all duration-300 ${
-        isScrolled ? 'bg-white/80 backdrop-blur-md shadow-sm' : 'bg-transparent'
+        isScrolled ? 'bg-white/80 backdrop-blur-md shadow-md' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a href="#" className="text-xl font-display font-medium">
-          <span className="text-gradient">Avinash</span>
+          <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">Avinash Anand</span>
         </a>
         
         {/* Desktop Navigation */}
@@ -53,21 +53,21 @@ const Header = () => {
           <nav className="flex flex-col space-y-6">
             <a 
               href="#about" 
-              className="text-lg font-medium"
+              className="text-lg font-medium text-gradient"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </a>
             <a 
               href="#projects" 
-              className="text-lg font-medium"
+              className="text-lg font-medium text-gradient"
               onClick={() => setIsMenuOpen(false)}
             >
               Projects
             </a>
             <a 
               href="#contact" 
-              className="text-lg font-medium"
+              className="text-lg font-medium text-gradient"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
